@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Drawer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="navigation">
+     <ul>
+         <!-- home -->
+     <li>
+     <a href="#">
+     <span class="icon"><i class="fas fa-home"></i></span>
+     <span class="title">Home</span>
+     </a>
+     </li>
+      <!-- profile -->
+     <li>
+        <a href="#">
+        <span class="icon"><i class="far fa-user"></i></span>
+        <span class="title">Profile</span>
+        </a>
+        </li>
+         <!-- message -->
+        <li>
+            <a href="#">
+            <span class="icon"><i class="far fa-sticky-note"></i></span>
+            <span class="title">Message</span>
+            </a>
+            </li>
+         <!-- help -->
+        <li>
+        <a href="#">
+         <span class="icon"><i class="far fa-question-circle"></i></span>
+        <span class="title">Help</span>
+        </a>
+        </li>
+         <!-- setting -->
+         <li>
+        <a href="#">
+         <span class="icon"><i class="fas fa-cog"></i></span>
+        <span class="title">Setting</span>
+         </a>
+         </li>
+          <!-- password -->
+         <li>
+         <a href="#">
+         <span class="icon"><i class="fas fa-unlock-alt"></i></span>
+         <span class="title">Password</span>
+        </a>
+        </li>
+        <!-- signout -->
+        <li>
+        <a href="#">
+        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+        <span class="title">Sign Out</span>
+         </a>
+        </li>
+     </ul>
+    </div>
+    <div class="toggle"></div>
+    </div>
+    <!-- javascript -->
+    <script>
+        const navigation = document.querySelector('.navigation');
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+            
+        }
+
+    </script>
+</body>
+</html>
